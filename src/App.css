@@ -1,38 +1,274 @@
+/* Custom styles */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "header main""header footer";
+}
+
+/* ******** Header ************ */
+header {
+  grid-area: header;
+  background: #FAFBFD;
+  padding: 0rem 3.5rem;
+}
+
+.header-content {
+  margin: 3rem auto;
+}
+
+.logo {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F7542E;
+}
+
+.logo-black {
+  color: #090F31;
+}
+
+nav {
+  margin-top: 7.5rem;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-bottom: 1.5rem;
+  color: #9E9E9E;
+  transition: all 200ms;
+}
+
+.nav-links li:hover {
+  color: #090F31;
+}
+
+/* ******** Main Section ********* */
+main {
+  grid-area: main;
+  padding-block: 2rem;
+  background: #FFF;
+
+  display: grid;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ******** Footer ************** */
+
+footer {
+  grid-area: footer;
+  display: grid;
+  align-items: center;
+  padding: 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer span,
+footer a {
+  margin-right: 0.5rem;
+}
+
+footer span {
+  color: #333333;
+}
+
+
+
+/* Styles for the input components */
+
+ul {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.welcome,
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.welcome-text {
+  font-weight: 500;
+}
+
+.welcome-text p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.welcome-text h1 {
+  font-size: 1.5rem;
+}
+
+.welcome-text a {
+  color: #f7542e;
+}
+
+
+/* Styles for Input Component */
+
+.inputComp-ctn {
+  margin-block: 2.375rem;
+  display: flex;
+  width: 100%;
+}
+
+.input-ctn {
+  width: 100%;
+}
+
+.inputCtn {
+  margin-top: 1rem;
+  margin-right: 3rem;
+  width: 100%;
+}
+
+.inputCtn label {
+  display: block;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #333333;
+  margin-bottom: 0.25rem;
+}
+
+.inputCtn input {
+  padding: 1.125rem 0.75rem;
+  border: 1px solid #828282;
+  border-radius: 8px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.inputCtn input:hover {
+  border: 1px solid #333333;
+}
+
+.inputCtn:focus-within label {
+  color: #2962FF;
+}
+
+.inputCtn input:focus {
+  outline: 1px solid #2962FF;
+  border: 1px solid #2962FF;
+}
+
+/* ****** Error Class ********** */
+
+.error label {
+  color: #D32F2F;
+}
+
+.error input {
+  border: 1px solid #D32F2F;
+}
+
+.error:hover label {
+  color: #333333;
+}
+
+.error:focus-within label {
+  color: #D32F2F;
+}
+
+.error:focus-within input {
+  outline: 1px solid #D32F2F;
+  border: 1px solid #D32F2F;
+}
+
+
+/* ******** Disabled class ********** */
+
+.disabled input {
+  background: #F2F2F2;
+  border: 1px solid #E0E0E0;
+}
+
+.disabled:hover input {
+  cursor: not-allowed;
+  border: 1px solid #E0E0E0;
+}
+
+/* ***** Input with icon ********** */
+/* .inputCtn .inputWithStartIcon::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 100%;
+  bottom: 100%;
+  width: 18px;
+  height: 18px;
+  background: #000;
+} */
+
+.inputCtn .inputWithStartIcon {
+  background: url(./assets/phone-call.png) no-repeat scroll 16px 21px;
+  background-size: 16px;
+  padding-left: 2.75rem;
+}
+
+.inputCtn .inputWithEndIcon {
+  background: url(./assets/phone-call.png) no-repeat scroll;
+  background-position: 220px 21px;
+  background-size: 16px;
+  padding-right: 2.75rem;
+}
+
+/* ******* HelperText ******** */
+.helper-text {
+  margin: 0.25rem 0 0 0;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #828282;
+}
+
+.error .helper-text {
+  color: #D32F2F;
+}
+
+/* ***** Size ******* */
+
+.inputCtn .small-input {
+  padding: 0.675rem 0.75rem;
+}
+
+.inputCtn .medium-input {
+  padding: 1.125rem 0.75rem;
+}
+
+
+.fullwidth {
+  width: 100%;
+}
+
+.fullwidth input {
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid #828282;
+  border-radius: 8px;
+  padding: 1.125rem 0.75rem;
 }
