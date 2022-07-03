@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://input-component-rohitgour03.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/Rohitgour03/Button-component">
       Solution
     </a>
     <span> | </span>
@@ -38,7 +38,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](./src/assets/Screenshot%202022-07-03%20at%2022-02-02%20Devchallenges.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
@@ -60,6 +60,17 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TSqutYM4c5WtluM7QzGp) was to build an application to complete the given user stories.
+
+- Users can see error state
+- Users can choose to disable input
+- Users can choose to have helper text
+- Users can choose to have an icon on the left or right (Use Google Icon and at least 5 variants)
+- Users can have different input sizes
+- Users can have different colors
+- Users can choose to have input take the width of the parent
+- Users can have multiline input like a textarea
+- When User hover or focus, user can see visual indicators
+- Users can still access all input attributes
 
 ## How To Use
 
@@ -88,6 +99,6 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [your-website.com](https://github.com/Rohitgour03)
+- GitHub [@Rohitgour03](https://github.com/Rohitgour03)
+- Twitter [@Rohitgour03](https://twitter.com/Rohitgour03)
